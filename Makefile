@@ -1,7 +1,7 @@
 ################################
 ### FreeSwitch headers files found in libfreeswitch-dev ###
-FS_INCLUDES=/usr/include/freeswitch
-FS_MODULES=/usr/lib/freeswitch/mod
+FS_INCLUDES=/usr/local/freeswitch/include/freeswitch
+FS_MODULES=/usr/local/freeswitch/mod
 ################################
 
 ### END OF CUSTOMIZATION ###
@@ -35,4 +35,4 @@ distclean: clean
 	rm -fR bcg729
 
 install: all
-	/usr/bin/install -c mod_bcg729.so $(INSTALL_PREFIX)/$(FS_MODULES)/mod_bcg729.so
+	/usr/bin/install -c mod_bcg729.so $(FS_MODULES)/mod_bcg729.so
